@@ -16,7 +16,7 @@ void tangDan(int arr[]){
         }
     }
 }
-
+//ok tang 
 
 int main(){
     
