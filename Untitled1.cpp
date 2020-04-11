@@ -4,23 +4,43 @@
 int arr[ZISE_ARR]={0,1,3,5,7,9,2,4,6,8};
 
 
+
 void tangDan(int arr[]){
     int i,j;
     for(i=0;i<ZISE_ARR-1;i++){
         for(j=i+1;j<ZISE_ARR;j++){
             if(arr[i]>arr[j]){
+               int tg =arr[i];
+                arr[i]=arr[j];
+                arr[j]=tg;
+            }
+        }
+    }
+ 
+}
+ 
+void giamDan(int arr[]){
+    int i,j;
+    for(i=0;i<ZISE_ARR-1;i++){
+        for(j=i+1;j<ZISE_ARR;j++){
+            if(arr[i]<arr[j]){
                 int tg =arr[i];
                 arr[i]=arr[j];
                 arr[j]=tg;
             }
         }
     }
+ 
 }
-//ok tang 
+ 
 
 int main(){
     
     tangDan(arr);
+ 
+ 
+    giamDan(arr);
+ 
     int i =0;
     for (i=0;i<ZISE_ARR;i++){
         printf("%d ",arr[i]);
