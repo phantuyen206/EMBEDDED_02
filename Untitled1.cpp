@@ -16,7 +16,7 @@ void giamDan(int arr[]){
     }
 printf("ok giam dan ")
 }
-
+ 
 int main(){
     giamDan(arr);
     int i =0;
