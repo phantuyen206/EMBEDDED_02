@@ -13,6 +13,7 @@ void tangDan(int arr[]){
             }
         }
     }
+printf("ok tang dan");
 }
 int main(){
     tangDan(arr);
