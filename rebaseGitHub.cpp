@@ -32,6 +32,7 @@ printf("ok giam dan");
 
 int main(){
     tangDan(arr);
+    giamDan(arr);
     int i =0;
     for (i=0;i<ZISE_ARR;i++){
         printf("%d ",arr[i]);
