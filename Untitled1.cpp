@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #define ZISE_ARR (10)
 int arr[ZISE_ARR]={0,1,3,5,7,9,2,4,6,8};
+
 void giamDan(int arr[]){
     int i,j;
     for (i=0;i<ZISE_ARR-1;i++){
@@ -15,6 +16,7 @@ void giamDan(int arr[]){
     }
 printf("ok giam dan ")
 }
+
 int main(){
     giamDan(arr);
     int i =0;
