@@ -16,23 +16,10 @@ void tangDan(int arr[]){
     }
 printf("ok tang dan");
 }
-void giamDan(int arr[]){
-    int i,j;
-    for (i=0;i<ZISE_ARR-1;i++){
-        for(j=i+1;j<ZISE_ARR;j++){
-            if(arr[i]<arr[j]){
-                int tmp =arr[i];
-                arr[i]=arr[j];
-                arr[j]=tmp;
-            }
-        }
-    }
-printf("ok giam dan");
-}
+
 
 int main(){
     tangDan(arr);
-    giamDan(arr);
     int i =0;
     for (i=0;i<ZISE_ARR;i++){
         printf("%d ",arr[i]);
