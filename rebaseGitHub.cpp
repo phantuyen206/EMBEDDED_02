@@ -15,6 +15,19 @@ void tangDan(int arr[]){
         }
     }
 }//tang dan
+void giamDan(int arr[]){
+    int i,j;
+    for(i=0;i<SIZE_ARR-1;i++){
+        for(j=i+1;j<SIZE_ARR;j++){
+            if(arr[i]<arr[j]){
+                int temp =arr[i];
+                arr[i]=arr[j];
+                arr[j]=temp;
+            }
+        }
+    }
+}//giam dan
+
 int main(){
     int i =0;
     for (i=0;i<ZISE_ARR;i++){
