@@ -8,6 +8,19 @@ void tangDan(int arr[]){
     for(i=0;i<SIZE_ARR-1;i++){
         for(j=i+1;j<SIZE_ARR;j++){
             if(arr[i]>arr[j]){
+		int temp =arr[i];
+                arr[i]=arr[j];
+                arr[j]=temp;
+            }
+        }
+    }
+}
+
+void giamDan(int arr[]){
+    int i,j;
+    for(i=0;i<SIZE_ARR-1;i++){
+        for(j=i+1;j<SIZE_ARR;j++){
+            if(arr[i]<arr[j]){
                 int temp =arr[i];
                 arr[i]=arr[j];
                 arr[j]=temp;
